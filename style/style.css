@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: antiquewhite;
+}
+
+a {
+text-decoration: none;
+/* color: white; */
+}
+
+ul {
+	list-style: none;
+}
+
+
+/* .container {
+  position: relative;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+} */
+
+/* .box {
+	width: 200px;
+	height: 200px;
+}
+
+.teal {
+   position: absolute;
+   background-color: teal;
+   top: 240px;
+   left: 350px;
+}
+
+.pink {
+	position: absolute;
+	background-color: palevioletred;
+	top: 40%;
+	left: 20%;
+}
+
+.orange {
+  position: absolute;
+  background-color: orange;
+  z-index: 111;
+  top: 120px;
+  left: 220px;
+} */
+
+a {
+	text-decoration: none;
+	color: #000;
+ }
+ 
+ h1 {
+	margin: 0;
+ }
+ 
+ ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+ }
+ 
+ li::before {
+	content: "";
+	border-radius: 3px;
+	width: 10px;
+	height: 10px;
+	background-color: orange;
+   border: 2px solid black;
+	margin-right: 5px;
+ }
+ 
+ .container {
+	position: relative;
+	
+ }
+ 
+ .wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-100%);
+	transition: transform 250ms ease;
+ }
+ 
+ .container:hover .wrapper {
+	transform: translateX(0);
+ }
+ 
+
+
+  .container:hover .menu-text-wrapper { 
+	transform: translateX(-100%);
+	overflow: hidden;
+ }
+
+ .menu-text-wrapper {
+	display: flex;
+	height: 100%;
+	writing-mode: vertical-lr;
+	padding-top: 5px;
+	background-color: #ccc;
+	padding: 10px;
+ }
+ 
+ .menu-text {
+	font-size: 20px;
+	margin-top: 40%;
+ }
+ 
+ 
+ .list {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 30%;
+	background: rgba(20, 20, 20, 0,5	);
+	backdrop-filter: blur(16);
+	border-right: 7px solid #fcfffc;
+	background-image: url(../img/серый\ фон\ .jpg);
+ }
+ 
+ .list:hover {
+	position: absolute;
+	overflow: hidden;
+ } 
+ 
+ .item {
+	display: flex;
+	padding-top: 30px;
+	padding-left: 50px;
+	margin-top: 50px;
+	transition: all 0.2s ease;
+ } 
+
+ .item .item-link:hover {
+	padding-left: 5px;
+	transition: all 0.2s ease;
+	color: #ffffff;
+ }
