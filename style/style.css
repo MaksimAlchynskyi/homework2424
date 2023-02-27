@@ -73,6 +73,7 @@ a {
  
  .container {
 	position: relative;
+	width: 500px;
 	
  }
  
@@ -86,16 +87,6 @@ a {
 	transition: transform 250ms ease;
  }
  
- .container:hover .wrapper {
-	transform: translateX(0);
- }
- 
-
-
-  .container:hover .menu-text-wrapper { 
-	transform: translateX(-100%);
-	overflow: hidden;
- }
 
  .menu-text-wrapper {
 	display: flex;
@@ -105,6 +96,18 @@ a {
 	background-color: #ccc;
 	padding: 10px;
  }
+
+ .container:hover .wrapper {
+	transform: translateX(0);
+ }
+ 
+
+
+ .container:hover .menu-text-wrapper { 
+	transform: translateX(-100%);
+	overflow: hidden;
+ }
+
  
  .menu-text {
 	font-size: 20px;
@@ -116,7 +119,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	width: 30%;
+	width: 100%;
 	background: rgba(20, 20, 20, 0,5	);
 	backdrop-filter: blur(16);
 	border-right: 7px solid #fcfffc;
